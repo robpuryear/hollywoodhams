@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import GIF from '../assets/Home Video.mp4';
 import GIF2 from '../assets/hollywoodham.mp4';
+import img1 from '../assets/Nfts/HHProfile.png';
 
 const VideoContainer = styled.div`
 width: 100%;
 
 video{
+    width: 100%;
+    height: auto;
+}
+img{
     width: 100%;
     height: auto;
 }
@@ -19,7 +24,7 @@ video{
 const CoverVideo = () => {
     return (
         <VideoContainer>
-            <video src={GIF2} type="video/mp4" autoPlay muted loop />
+            <img src={img1} alt="The Hollywood Hams" />
         </VideoContainer>
     );
 };
